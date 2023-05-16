@@ -12,6 +12,16 @@ const IndexPage = () => {
         src='../images/balloons.jpg'
         alt='balloon'
       />
+            <p>I'm making this by following the Gatsby Tutorial.</p>
+      <StaticImage
+        src='../images/balloons.jpg'
+        alt='balloon'
+      />
+            <p>I'm making this by following the Gatsby Tutorial.</p>
+      <StaticImage
+        src='../images/balloons.jpg'
+        alt='balloon'
+      />
     </Layout>
   )
 }

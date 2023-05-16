@@ -1,16 +1,40 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle
-} from './layout.module.css'
+import styled from 'styled-components'
+import Nav from './nav'
+
+const LayoutContainer = styled.div`
+  margin: auto;
+  max-width: 500px;
+  font-family: sans-serif;
+`
+const Heading = styled.header`
+  color: rebeccapurple;
+`
+
+const NavLinks = styled.ul`
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+`
+
+const NavLinkItem = styled.li`
+  padding-right: 2rem;
+`
+
+const StyledLink = styled(Link)`
+  color: black;
+`
+
+const SiteTitle = styled.header`
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 3rem 0;
+`
+
 
 const Layout = ({ pageTitle, children }) => {
-
   const data = useStaticQuery(graphql`
   query {
     site {
@@ -21,33 +45,37 @@ const Layout = ({ pageTitle, children }) => {
   }
   `)
 
+
   return (
-    <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
-        {children}
-      </main>
-    </div>
+    <>
+      <Nav />
+      <LayoutContainer>
+        <SiteTitle>{data.site.siteMetadata.title}</SiteTitle>
+        <nav>
+          <NavLinks>
+            <NavLinkItem>
+              <StyledLink to="/">
+                Home
+              </StyledLink>
+            </NavLinkItem>
+            <NavLinkItem>
+              <StyledLink to="/about">
+                About
+              </StyledLink>
+            </NavLinkItem>
+            <NavLinkItem>
+              <StyledLink to="/blog">
+                Blog
+              </StyledLink>
+            </NavLinkItem>
+          </NavLinks>
+        </nav>
+        <main>
+          <Heading>{pageTitle}</Heading>
+          {children}
+        </main>
+      </LayoutContainer>
+    </>
   )
 }
 
