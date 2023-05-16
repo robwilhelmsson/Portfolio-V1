@@ -3,11 +3,20 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `portfolio-v1`,
+    title: `Rob Wilhelmsson`,
+    description:
+      'Portfolio for Rob Wilhelmsson, software engineer.',
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      }
+    },
   ],
 }
