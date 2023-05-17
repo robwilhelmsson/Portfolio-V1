@@ -11,25 +11,37 @@ const NavbarContainer = styled.nav`
 `;
 
 const Logo = styled(Link)`
+  /* background-color: blue; */
+  flex: 2;
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
   text-decoration: none;
 `;
 
-const Navbar = () => {
+const NavLinkContainer = styled.div`
+  flex: 1.7;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const NavLink = styled(Link)`
+  /* color: red; */
+`;
+
+const Nav = () => {
   return (
     <NavbarContainer>
       <Logo to="/">Your Logo</Logo>
-      <div>
-        <Link to="/hero">Hero</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
-      </div>
+      <NavLinkContainer>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to='/'>CV</NavLink>
+      </NavLinkContainer>
     </NavbarContainer>
   );
 };
 
-export default Navbar;
+export default Nav;
 
