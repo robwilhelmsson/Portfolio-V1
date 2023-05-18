@@ -6,7 +6,7 @@ const NavbarContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  height: 100px;
   background-color: #f1f1f1;
 `;
 
@@ -17,22 +17,24 @@ const Logo = styled(Link)`
   font-weight: bold;
   color: #333;
   text-decoration: none;
+  margin-left: 40px;
 `;
 
 const NavLinkContainer = styled.div`
-  flex: 1.7;
+  flex: 1;
   display: flex;
   justify-content: space-between;
+  margin-right: 40px;
 `;
 
 const NavLink = styled(Link)`
-  /* color: red; */
+  color: blue;
 `;
 
 const Nav = () => {
   return (
     <NavbarContainer>
-      <Logo to="/">Your Logo</Logo>
+      <Logo to="/">Logo</Logo>
       <NavLinkContainer>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Projects</NavLink>

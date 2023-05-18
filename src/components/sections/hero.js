@@ -1,27 +1,34 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
-const Container = styled.main`
+const Container = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  max-width: 600px;
+  max-width: 800px;
+  height: 100vh - 100px;
+  /* font-family: "Open Sans"; */
+  h3 {
+    color: var(--red);
+    font-family: "Fira Code";
+    font-size: 20px;
+    font-weight: 200;
+  }
+  h1 {
+
+  }
 `
+
 
 const Hero = () => {
   return (
     <>
       <Container>
+        <h3>Hi, my name is</h3>
         <h1>Rob Wilhelmsson</h1>
-        <h2>Software Engineer</h2>
-        <p>My passion for software engineering has come from the combination of my technical engineering background and my desire to have a creative outlet. I found that this field allowed me to practise both of these attributes in a way that one cannot work without the other which has led me to exploring deeper into the world of software engineering.
-        </p>
-        <StaticImage
-          src='../../images/balloons.jpg'
-          alt='balloons'
-        />
+        <h2>I enjoy building things for the web.</h2>
+        <p>I'm a software engineer. I completed a full-stack software engineering bootcamp with General Assembly. I am now looking to put my skills to good use and gain some experience!</p>
       </Container >
     </>
 

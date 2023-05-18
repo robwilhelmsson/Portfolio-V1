@@ -15,6 +15,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/fira-code": "^4.5.13",
+    "@fontsource/josefin-sans": "^4.5.12",
+    "@fontsource/josefin-slab": "^4.5.11",
+    "@fontsource/open-sans": "^4.5.14",
     "@mdx-js/react": "^2.3.0",
     "babel-plugin-styled-components": "^2.1.1",
     "gatsby": "^5.9.1",
@@ -27,5 +31,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
   }
 }
