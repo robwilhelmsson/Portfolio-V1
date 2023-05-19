@@ -1,13 +1,12 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
-  background-color: #f1f1f1;
+  height: var(--nav-height);
 `;
 
 const Logo = styled(Link)`
@@ -39,11 +38,10 @@ const Nav = () => {
         <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        <NavLink to='/'>CV</NavLink>
+        <NavLink to="/">CV</NavLink>
       </NavLinkContainer>
     </NavbarContainer>
   );
 };
 
 export default Nav;
-

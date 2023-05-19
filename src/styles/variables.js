@@ -1,14 +1,14 @@
-import { css } from 'styled-components'
+import { css } from "styled-components";
 
 const variables = css`
   :root {
     --green: #127369;
-    --dark-green: #10403B;
-    --light-grey: #8AA6A3;
-    --dark-grey: #4C5958;
-    --light: #BFBFBF;
-    --red: #E41A1A;
-    --pink: #D39A9A;
+    --dark-green: #071f1c;
+    --light-grey: #8aa6a3;
+    --dark-grey: #4c5958;
+    --light: #d1d1d1;
+    --red: #e41a1a;
+    --pink: #d39a9a;
 
     --font-sans: "Josefin Sans", sans-serif;
     --font-serif: "Josefin Slab", serif;
@@ -26,6 +26,8 @@ const variables = css`
     --border-radius: 4px;
     --nav-height: 100px;
   }
-`
+`;
 
-export default variables
+export default variables;
+
+// #10403b dark green original

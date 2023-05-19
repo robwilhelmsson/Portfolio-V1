@@ -1,15 +1,13 @@
-
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const StyledSideElement = styled.div`
   width: 40px;
   position: fixed;
   bottom: 0;
-  right: 40px;
+  right: 50px;
   z-index: 10;
-`
-
+`;
 
 const StyledEmailWrapper = styled.div`
   background-color: red;
@@ -41,17 +39,17 @@ const StyledEmailWrapper = styled.div`
   }
 `;
 
-
-
 const EmailSide = () => {
   return (
     <StyledSideElement>
       <StyledEmailWrapper>
-        <a href='{`mailto:rob.wilhelmsson@gmail.com`}'>rob.wilhelmsson@gmail.com</a><p>————————</p>
+        <a href="{`mailto:rob.wilhelmsson@gmail.com`}">
+          rob.wilhelmsson@gmail.com
+        </a>
+        <p>————————</p>
       </StyledEmailWrapper>
     </StyledSideElement>
+  );
+};
 
-  )
-}
-
-export default EmailSide
+export default EmailSide;

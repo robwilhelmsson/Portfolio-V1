@@ -9,9 +9,9 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
-    background-color: var(--green);
+    background-color: var(--dark-green);
     font-family: var(--font-sans);
   };
 `;
 
-export default GlobalStyle
+export default GlobalStyle;
