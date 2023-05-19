@@ -11,7 +11,8 @@ const StyledSideElement = styled.div`
 `;
 
 const StyledSocialWrapper = styled.div`
-  background-color: red;
+  /* background-color: red; */
+  color: var(--light-grey);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,9 +33,9 @@ const Socialside = () => {
     <>
       <StyledSideElement>
         <StyledSocialWrapper>
-          <AiFillGithub size={35} style={{ fill: "black" }} />
-          <AiFillLinkedin size={35} style={{ fill: "black" }} />
-          <AiFillContacts size={35} style={{ fill: "black" }} />
+          <AiFillGithub size={35} style={{ fill: "#9DABAB" }} />
+          <AiFillLinkedin size={35} style={{ fill: "#9DABAB" }} />
+          <AiFillContacts size={35} style={{ fill: "#9DABAB" }} />
           <p>————————</p>
         </StyledSocialWrapper>
       </StyledSideElement>

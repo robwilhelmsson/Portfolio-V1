@@ -8,18 +8,19 @@ import GlobalStyle from "../styles/globalStyles";
 
 const StyledMain = styled.main`
   display: flex;
-  justify-content: center;
 `;
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
       <Nav />
       <StyledMain>
         <Socialside />
-        <Hero />
         <EmailSide />
+        <div id="content">
+          {children}
+        </div>
       </StyledMain>
     </>
   );

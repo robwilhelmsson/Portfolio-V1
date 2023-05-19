@@ -1,10 +1,16 @@
 import * as React from "react";
 import Layout from "../components/layout";
-// import { StaticImage } from 'gatsby-plugin-image'
+import Hero from "../components/sections/hero";
 import Seo from "../components/seo";
 
 const IndexPage = () => {
-  return <Layout></Layout>;
+  return <>
+    <Layout>
+      <Hero />
+
+    </Layout>;
+  </>
+
 };
 
 export const Head = () => <Seo title />;

@@ -15,13 +15,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/fira-code": "^4.5.13",
-    "@fontsource/josefin-sans": "^4.5.12",
-    "@fontsource/josefin-slab": "^4.5.11",
-    "@fontsource/open-sans": "^4.5.14",
     "@mdx-js/react": "^2.3.0",
     "babel-plugin-styled-components": "^2.1.1",
     "gatsby": "^5.9.1",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-mdx": "^5.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
@@ -29,6 +26,7 @@
     "gatsby-source-filesystem": "^5.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
     "styled-components": "^5.3.10"
   },

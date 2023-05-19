@@ -10,7 +10,7 @@ const StyledSideElement = styled.div`
 `;
 
 const StyledEmailWrapper = styled.div`
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,11 +21,12 @@ const StyledEmailWrapper = styled.div`
   a {
     margin: 20px auto 0 auto;
     padding: 10px;
-    font-family: sans-serif;
     font-size: 15px;
     /* line-height: var(--fz-lg); */
     letter-spacing: 0.1rem;
+    color: var(--light-grey);
     writing-mode: vertical-rl;
+    text-decoration: none;
 
     /* &:hover,
     &:focus {
@@ -36,6 +37,7 @@ const StyledEmailWrapper = styled.div`
   p {
     writing-mode: vertical-rl;
     letter-spacing: -0.4rem;
+    color: var(--light-grey);
   }
 `;
 

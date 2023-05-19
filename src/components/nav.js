@@ -14,7 +14,7 @@ const Logo = styled(Link)`
   flex: 2;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--orange);
   text-decoration: none;
   margin-left: 40px;
 `;
@@ -27,7 +27,8 @@ const NavLinkContainer = styled.div`
 `;
 
 const NavLink = styled(Link)`
-  color: blue;
+  color: var(--orange);
+  text-decoration: none;
 `;
 
 const Nav = () => {
