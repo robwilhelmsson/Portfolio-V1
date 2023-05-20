@@ -28,7 +28,9 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
-    "styled-components": "^5.3.10"
+    "react-scroll": "^1.8.9",
+    "styled-components": "^5.3.10",
+    "styled-icons": "^10.47.0"
   },
   "devDependencies": {
     "eslint": "^8.40.0",

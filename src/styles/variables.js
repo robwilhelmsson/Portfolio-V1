@@ -3,6 +3,7 @@ import { css } from "styled-components";
 const variables = css`
   :root {
     --dark-green: #2C3333;
+    --green: #3D4747;
     --light-grey: #9DABAB;
     --light: #DFF2F2;
     --orange: #FF7721;
@@ -25,10 +26,3 @@ const variables = css`
 `;
 
 export default variables;
-
-// #10403b dark green original
-
-// --dark-green: #011F26;
-// --light-grey: #AFBABD;
-// --light: #E0E0E0;
-// --orange: #E3710E;

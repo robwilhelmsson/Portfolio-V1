@@ -1,43 +1,55 @@
+
 import React from "react";
-import { AiFillGithub, AiFillLinkedin, AiFillContacts } from "react-icons/ai";
 import styled from "styled-components";
+// import * as feather from '@styled-icons/feather'
+// import { GithubIcon } from "@styled-icons/feather/Github"
+// import { LinkedinIcon } from "@styled-icons/feather/Linkedin"
+// import { TwitterIcon } from "@styled-icons/feather/Twitter"
+import {StyledIconBase} from '@styled-icons/styled-icon'
+import { Github, Linkedin, Twitter } from "@styled-icons/feather"
 
 const StyledSideElement = styled.div`
   width: 40px;
   position: fixed;
   bottom: 0;
-  left: 50px;
+  left: 40px;
   z-index: 10;
 `;
 
-const StyledSocialWrapper = styled.div`
-  /* background-color: red; */
-  color: var(--light-grey);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  margin: auto;
-  padding: 0px;
-
+const IconStyleWrapper = styled.div`
+  ${StyledIconBase} {
+    color: var(--light-grey);
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+  }
   p {
+    color: var(--light-grey);
     writing-mode: vertical-rl;
+    margin-top: 20px;
     letter-spacing: -0.4rem;
   }
-`;
+  .icon {
+    margin-top: 20px;
+  }
+`
 
-// const SocialIcons
+
+
 
 const Socialside = () => {
   return (
     <>
       <StyledSideElement>
-        <StyledSocialWrapper>
-          <AiFillGithub size={35} style={{ fill: "#9DABAB" }} />
-          <AiFillLinkedin size={35} style={{ fill: "#9DABAB" }} />
-          <AiFillContacts size={35} style={{ fill: "#9DABAB" }} />
-          <p>————————</p>
-        </StyledSocialWrapper>
+        <IconStyleWrapper>
+          <Github className="icon" />
+          <Linkedin className="icon"/>
+          <Twitter className="icon" />
+          <p>———————————————————</p>
+        </IconStyleWrapper>
       </StyledSideElement>
     </>
   );

@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledSideElement = styled.div`
+  display: flex;
   width: 40px;
   position: fixed;
   bottom: 0;
-  right: 50px;
+  right: 40px;
   z-index: 10;
 `;
 
@@ -15,15 +16,15 @@ const StyledEmailWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* width: 60px; */
   /* margin: 0 15px; */
 
   a {
     margin: 20px auto 0 auto;
     padding: 10px;
-    font-size: 15px;
+    font-family: var(--font-mono);
+    font-size: var(--fs-xxs);
     /* line-height: var(--fz-lg); */
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.12rem;
     color: var(--light-grey);
     writing-mode: vertical-rl;
     text-decoration: none;
@@ -36,6 +37,7 @@ const StyledEmailWrapper = styled.div`
 
   p {
     writing-mode: vertical-rl;
+    margin-top: 15px;
     letter-spacing: -0.4rem;
     color: var(--light-grey);
   }
@@ -48,7 +50,7 @@ const EmailSide = () => {
         <a href="{`mailto:rob.wilhelmsson@gmail.com`}">
           rob.wilhelmsson@gmail.com
         </a>
-        <p>————————</p>
+        <p>———————————————————</p>
       </StyledEmailWrapper>
     </StyledSideElement>
   );
