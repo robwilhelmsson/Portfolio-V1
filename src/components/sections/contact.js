@@ -30,7 +30,6 @@ const StyledContactContainer = styled.section`
     ::after {
       margin-left: 10px;
     }
-  }
 `
 
 const Contact = () => {
