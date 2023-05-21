@@ -2,6 +2,7 @@ import * as React from "react";
 import Nav from "./nav";
 import Socialside from "./socialside";
 import EmailSide from "./emailside";
+import Footer from "./footer";
 import styled from "styled-components";
 import GlobalStyle from "../styles/globalStyles";
 
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
         <div id="content">
           {children}
         </div>
+        <Footer />
       </StyledMain>
     </>
   );

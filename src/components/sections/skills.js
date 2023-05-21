@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const StyledSkillsContainer = styled.section`
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 700px;
   padding-bottom: 100px;
   height: auto;
   margin: auto;
@@ -17,9 +17,11 @@ const StyledSkillsContainer = styled.section`
     font-weight: 300;
     color: var(--light);
     margin-right: 5px;
+    cursor: default;
 
     ::after {
       content: '————————';
+      font-weight: 200;
       letter-spacing: -6px;
       color: var(--orange);
     }
@@ -50,6 +52,7 @@ const StyledContent = styled.div`
     color: var(--light);
     font-size: var(--fs-lg);
     font-weight: 500;
+    cursor: default;
     ::after {
       content: '.';
       color: var(--orange);
@@ -66,6 +69,7 @@ const StyledContent = styled.div`
 
   li {
     line-height: 25px;
+    cursor: default;
   }
 `;
 

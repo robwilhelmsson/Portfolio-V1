@@ -18,6 +18,12 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 600;
       margin: 0 0 10px 0;
     }
+
+    .medium-heading {
+      font-size: clamp(30px, 8vw, 50px);
+      font-weight: 500;
+      margin: 0 0 10px 0;
+    }
   };
 `;
 

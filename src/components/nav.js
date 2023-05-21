@@ -16,7 +16,7 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled(Link)`
-  font-size: var(--fs-xxxl);
+  font-size: var(--fs-xxxxl);
   font-weight: 300;
   color: var(--orange);
   text-decoration: none;

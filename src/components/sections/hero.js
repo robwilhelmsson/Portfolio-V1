@@ -41,7 +41,7 @@ const StyledHeroContainer = styled.section`
   }
 `;
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   font-family: var(--font-mono);
   font-size: var(--fs-sm);
   width: 150px;
