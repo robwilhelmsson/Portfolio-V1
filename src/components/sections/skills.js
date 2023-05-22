@@ -2,11 +2,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const StyledSkillsContainer = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   height: auto;
   margin: auto;
 
@@ -21,7 +22,7 @@ const StyledSkillsContainer = styled.section`
 
     ::after {
       content: '————————';
-      font-weight: 200;
+      font-weight: 100;
       letter-spacing: -6px;
       color: var(--orange);
     }
@@ -91,7 +92,7 @@ const Skills = () => {
             <h3>Frontend&nbsp;</h3>
             <ul>
               {frontendContent.map((content) => (
-                <li>{content}</li>
+                <li key={content}>{content}</li>
               ))}
             </ul>
           </StyledContent>
@@ -99,7 +100,7 @@ const Skills = () => {
             <h3>Backend&nbsp;</h3>
             <ul>
               {backendContent.map((content) => (
-                <li>{content}</li>
+                <li key={content}>{content}</li>
               ))}
             </ul>
           </StyledContent>
@@ -107,7 +108,7 @@ const Skills = () => {
             <h3>Management&nbsp;</h3>
             <ul>
               {projectManagementContent.map((content) => (
-                <li>{content}</li>
+                <li key={content}>{content}</li>
               ))}
             </ul>
           </StyledContent>
@@ -115,7 +116,7 @@ const Skills = () => {
             <h3>Design&nbsp;</h3>
             <ul>
               {designContent.map((content) => (
-                <li>{content}</li>
+                <li key={content}>{content}</li>
               ))}
             </ul>
           </StyledContent>

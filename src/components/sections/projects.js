@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const StyledProjectContainer = styled.section`
   max-width: 800px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   margin: auto;
 
   h1 {
@@ -17,7 +17,7 @@ const StyledProjectContainer = styled.section`
 
     ::before {
       content: '————————';
-      font-weight: 200;
+      font-weight: 100;
       letter-spacing: -6px;
       color: var(--orange);
     }

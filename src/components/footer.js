@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
 const Footer = () => {
   return (
     <StyledFooterContainer>
-      <StyledLink to='https://github.com/robwilhelmsson/portfolio-v1' target='_blank'>
+      <StyledLink to='' target='_blank'>
         <p>Designed and built by Rob Wilhelmsson, inspired by some of the best.</p>
         <p>Link to GitHub repository</p>
       </StyledLink>

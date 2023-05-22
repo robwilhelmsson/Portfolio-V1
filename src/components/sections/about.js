@@ -17,7 +17,7 @@ const StyledAboutContainer = styled.section`
 
     ::before {
       content: '————————';
-      font-weight: 200;
+      font-weight: 100;
       letter-spacing: -6px;
       color: var(--orange);
     }

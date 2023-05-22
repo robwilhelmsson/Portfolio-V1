@@ -9,11 +9,24 @@ import {StyledIconBase} from '@styled-icons/styled-icon'
 import { Github, Linkedin, Twitter } from "@styled-icons/feather"
 
 const StyledSideElement = styled.div`
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   width: 40px;
   position: fixed;
   bottom: 0;
   left: 40px;
   z-index: 10;
+  ::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100px;
+    margin: 25px auto 0 auto;
+    background-color: var(--light-grey);
+  }
 `;
 
 const IconStyleWrapper = styled.div`
@@ -26,14 +39,8 @@ const IconStyleWrapper = styled.div`
     position: relative;
     margin: auto;
   }
-  p {
-    color: var(--light-grey);
-    writing-mode: vertical-rl;
-    margin-top: 20px;
-    letter-spacing: -0.4rem;
-  }
   .icon {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 `
 
@@ -48,7 +55,6 @@ const Socialside = () => {
           <Github className="icon" />
           <Linkedin className="icon"/>
           <Twitter className="icon" />
-          <p>———————————————————</p>
         </IconStyleWrapper>
       </StyledSideElement>
     </>

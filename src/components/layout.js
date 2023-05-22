@@ -9,6 +9,14 @@ import GlobalStyle from "../styles/globalStyles";
 
 const StyledMain = styled.main`
   padding: 0 140px;
+  
+  @media (max-width: 900px) {
+    padding: 0 110px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 50px;
+  }
 `;
 
 

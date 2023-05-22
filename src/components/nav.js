@@ -2,17 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
+
 const NavbarContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: var(--nav-height);
+  padding: 0 40px;
 `;
 
 const LogoContainer = styled.div`
   display: flex;
   flex: 2;
-  margin-left: 40px;
 `;
 
 const Logo = styled(Link)`
@@ -27,7 +28,10 @@ const NavLinkContainer = styled.div`
   flex: 1.7;
   display: flex;
   justify-content: space-between;
-  margin-right: 40px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const NavLink = styled(Link)`
@@ -41,11 +45,11 @@ const NavLink = styled(Link)`
   cursor: pointer;
   /* margin-right: 5px; */
   ::before {
-    content: '——————————';
+    content: '———————';
     color: var(--orange);
   }
   ::after {
-    content: '——';
+    content: '———';
     color: var(--orange);
   }
 `;
@@ -56,7 +60,6 @@ const ButtonLink = styled(NavLink)`
   width: 80px;
   height: 25px;
   color: var(--orange);
-
   ::before {
     content: '';
   }

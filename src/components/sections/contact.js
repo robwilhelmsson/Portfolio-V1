@@ -1,7 +1,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { StyledButton } from './hero'
+import { StyledLink } from './hero'
 
 const StyledContactContainer = styled.section`
   /* display: flex; */
@@ -9,7 +9,7 @@ const StyledContactContainer = styled.section`
   max-width: 500px;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   height: auto;
   margin: auto;
 
@@ -53,12 +53,11 @@ const StyledContactContainer = styled.section`
       align-items: center;
       text-align: center;
     }
+    a {
+      text-decoration: none;
+      color: var(--orange);
+    }
 `
-
-const StyledGetInTouchButton = styled(StyledButton)`
-
-`
-
 
 
 const Contact = () => {
@@ -70,7 +69,9 @@ const Contact = () => {
       <div className='content'>
         <h2 className='medium-heading'>Get in touch</h2>
         <p>I'm currently looking for work experience within web development so feel free to get in touch if you want to chat, my inbox is always open.</p>
-        <StyledGetInTouchButton>Get in touch</StyledGetInTouchButton>
+          <StyledLink>
+            <span>Contact</span>
+          </StyledLink>
       </div>
     </StyledContactContainer>
   )
