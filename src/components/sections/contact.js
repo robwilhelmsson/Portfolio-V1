@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { StyledLink } from './hero'
 
+
 const StyledContactContainer = styled.section`
   /* display: flex; */
   flex-direction: column;
@@ -69,7 +70,7 @@ const Contact = () => {
       <div className='content'>
         <h2 className='medium-heading'>Get in touch</h2>
         <p>I'm currently looking for work experience within web development so feel free to get in touch if you want to chat, my inbox is always open.</p>
-          <StyledLink>
+          <StyledLink to='/'>
             <span>Contact</span>
           </StyledLink>
       </div>
