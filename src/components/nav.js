@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import Burger from "./burger";
+import Menu from "./menu";
+
+import useOnClickOutside from "../hooks/useOnClickOutside";
 
 
 const NavbarContainer = styled.nav`
@@ -17,7 +21,7 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled(Link)`
-  font-size: var(--fs-xxxxl);
+  font-size: var(--fs-xxxl);
   font-weight: 300;
   color: var(--orange);
   text-decoration: none;
@@ -43,14 +47,27 @@ const NavLink = styled(Link)`
   font-size: var(--fs-xxs);
   text-decoration: none;
   cursor: pointer;
-  /* margin-right: 5px; */
+  transition: all 0.4s ease 0s;
+
+  :hover {
+    color: var(--orange);
+    letter-spacing: 0.2px;
+  }
   ::before {
     content: '———————';
     color: var(--orange);
+
+    @media (max-width: 900px) {
+      content: '—————';
+    }
   }
   ::after {
     content: '———';
     color: var(--orange);
+
+    @media (min-width: 1200px) {
+      content: '———————';
+    }
   }
 `;
 
@@ -60,6 +77,10 @@ const ButtonLink = styled(NavLink)`
   width: 80px;
   height: 25px;
   color: var(--orange);
+  :hover {
+    background-color: var(--orange);
+    color: var(--light);
+  }
   ::before {
     content: '';
   }
@@ -68,12 +89,28 @@ const ButtonLink = styled(NavLink)`
   }
 `
 
+
+
 const Nav = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false)
+  const node = useRef()
+  useOnClickOutside(node, () => setMenuOpen(false))
+
+
   return (
     <NavbarContainer>
+
       <LogoContainer>
         <Logo to="/" spy={true} smooth={true} offset={0} duration={500}>R.W.</Logo>
       </LogoContainer>
+
+      <div ref={node}>
+        <Burger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      </div>
+
+
       <NavLinkContainer>
         <NavLink to="about" spy={true} smooth={true} offset={-50} duration={700}>&nbsp;About&nbsp;</NavLink>
         <NavLink to="skills" spy={true} smooth={true} offset={-50} duration={700}>&nbsp;Skills&nbsp;</NavLink>
@@ -81,6 +118,7 @@ const Nav = () => {
         <NavLink to="contact" spy={true} smooth={true} offset={-50} duration={700}>&nbsp;Contact&nbsp;</NavLink>
         <ButtonLink to="/">CV</ButtonLink>
       </NavLinkContainer>
+
     </NavbarContainer>
   );
 };

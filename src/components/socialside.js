@@ -1,12 +1,10 @@
 
 import React from "react";
 import styled from "styled-components";
-// import * as feather from '@styled-icons/feather'
-// import { GithubIcon } from "@styled-icons/feather/Github"
-// import { LinkedinIcon } from "@styled-icons/feather/Linkedin"
-// import { TwitterIcon } from "@styled-icons/feather/Twitter"
 import {StyledIconBase} from '@styled-icons/styled-icon'
 import { Github, Linkedin, Twitter } from "@styled-icons/feather"
+
+
 
 const StyledSideElement = styled.div`
 
@@ -32,7 +30,7 @@ const StyledSideElement = styled.div`
 const IconStyleWrapper = styled.div`
   ${StyledIconBase} {
     color: var(--light-grey);
-    height: 25px;
+    height: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +51,7 @@ const Socialside = () => {
       <StyledSideElement>
         <IconStyleWrapper>
           <Github className="icon" />
-          <Linkedin className="icon"/>
+          <Linkedin className="icon" />
           <Twitter className="icon" />
         </IconStyleWrapper>
       </StyledSideElement>

@@ -7,10 +7,15 @@ import { Link } from "react-scroll";
 const StyledHeroContainer = styled.section`
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 1000px;
   height: calc(100vh - var(--nav-height) - 100px);
   padding-top: 100px;
   margin: auto;
+
+  @media (max-width: 900px) {
+    height: calc(100vh - var(--nav-height) - 40px);
+    padding-top: 60px;
+  }
 
   h3 {
     color: var(--orange);
@@ -41,6 +46,10 @@ const StyledHeroContainer = styled.section`
     margin: 25px 0px 0 0;
     color: var(--orange);
     text-decoration: none;
+    :hover {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
   }
 `;
 

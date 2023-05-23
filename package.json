@@ -17,6 +17,7 @@
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
     "babel-plugin-styled-components": "^2.1.1",
+    "feather-icons": "^4.29.0",
     "gatsby": "^5.9.1",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.10.0",
