@@ -39,6 +39,12 @@ const IconStyleWrapper = styled.div`
   }
   .icon {
     margin-top: 25px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    :hover {
+      transform: translateY(-3px);
+      color: var(--orange);
+    }
   }
 `
 

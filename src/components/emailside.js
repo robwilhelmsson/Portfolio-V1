@@ -38,6 +38,11 @@ const StyledEmailWrapper = styled.div`
     color: var(--light-grey);
     writing-mode: vertical-rl;
     text-decoration: none;
+    transition: all 0.4s ease 0s;
+    :hover {
+      letter-spacing: 2px;
+      color: var(--orange);
+    }
   }
 `;
 
