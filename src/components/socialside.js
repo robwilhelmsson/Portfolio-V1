@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import {StyledIconBase} from '@styled-icons/styled-icon'
-import { Github, Linkedin, Twitter } from "@styled-icons/feather"
+import { Github, Linkedin, Mail, Codepen } from "@styled-icons/feather"
 
 
 
@@ -52,7 +52,8 @@ const Socialside = () => {
         <IconStyleWrapper>
           <Github className="icon" />
           <Linkedin className="icon" />
-          <Twitter className="icon" />
+          <Mail className="icon" />
+          <Codepen className="icon"/>
         </IconStyleWrapper>
       </StyledSideElement>
     </>

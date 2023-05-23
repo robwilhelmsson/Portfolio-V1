@@ -25,7 +25,7 @@ const StyledBurger = styled.button`
   div {
     width: 40px;
     height: 2px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.7s ease-in-out;
     background: var(--orange);
     border-radius: 1px;
     position: relative;
