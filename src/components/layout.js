@@ -5,7 +5,7 @@ import EmailSide from "./emailside";
 import Footer from "./footer";
 import styled from "styled-components";
 import GlobalStyle from "../styles/globalStyles";
-
+import MouseGlow from "./mouseglow";
 
 const StyledMain = styled.main`
   padding: 0 140px;
@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
+      <MouseGlow />
       <Nav />
       <StyledMain>
         <Socialside />

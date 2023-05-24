@@ -52,6 +52,9 @@ const StyledContent = styled.div`
     transform: translateY(-5px) ;
     transition: transform 300ms;
   }
+  @media (max-width: 450px) {
+    min-width: 200px;
+  }
 
 
   h3 {
