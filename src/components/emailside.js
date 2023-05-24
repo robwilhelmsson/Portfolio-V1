@@ -50,7 +50,7 @@ const EmailSide = () => {
   return (
     <StyledSideElement>
       <StyledEmailWrapper>
-        <a href="{`mailto:rob.wilhelmsson@gmail.com`}">
+        <a href="mailto:rob.wilhelmsson@gmail.com">
           rob.wilhelmsson@gmail.com
         </a>
       </StyledEmailWrapper>

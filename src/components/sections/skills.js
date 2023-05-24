@@ -7,9 +7,9 @@ const StyledSkillsContainer = styled.section`
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  padding-bottom: 200px;
   height: auto;
   margin: auto;
+  padding-bottom: 200px;
 
   h1 {
     display: flex;
@@ -32,7 +32,11 @@ const StyledSkillsContainer = styled.section`
 const StyledContentContainer = styled.div`
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: center;
+  padding-top: 10px;
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+  }
 ;`
 
 const StyledContent = styled.div`
@@ -40,6 +44,7 @@ const StyledContent = styled.div`
   flex-direction: column;
   min-width: 140px;
   padding-left: 15px;
+  margin: 0 0 20px 20px;
   background-color: var(--green);
   border-radius: 3px;
   box-shadow: 0px 7px 10px -8px rgba(0,0,0,0.6);

@@ -2,11 +2,11 @@ import { css } from "styled-components";
 
 const variables = css`
   :root {
-    --dark-green: #2C3333;
-    --green: #3D4747;
-    --light-grey: #9DABAB;
-    --light: #DFF2F2;
-    --orange: #FF7721;
+    --dark-green: #19241D;
+    --green: #2A382A;
+    --light-grey: #9DB3A5;
+    --light: #D5F2DF;
+    --orange: #E85D1C;
 
     --font-sans: "Josefin Sans", sans-serif;
     --font-mono: "Fira Code", monospace;
@@ -28,3 +28,9 @@ const variables = css`
 `;
 
 export default variables;
+
+// --dark-green: #2C3333;
+// --green: #3D4747;
+// --light-grey: #9DABAB;
+// --light: #DFF2F2;
+// --orange: #FF7721;

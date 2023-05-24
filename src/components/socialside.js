@@ -1,7 +1,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import {StyledIconBase} from '@styled-icons/styled-icon'
+import { StyledIconBase } from '@styled-icons/styled-icon'
 import { Github, Linkedin, Mail, Codepen } from "@styled-icons/feather"
 
 
@@ -56,10 +56,18 @@ const Socialside = () => {
     <>
       <StyledSideElement>
         <IconStyleWrapper>
-          <Github className="icon" />
-          <Linkedin className="icon" />
-          <Mail className="icon" />
-          <Codepen className="icon"/>
+          <a href="https://github.com/robwilhelmsson" target="_blank" rel="noreferrer">
+            <Github className="icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/robwilhelmsson/" target="_blank" rel="noreferrer">
+            <Linkedin className="icon" />
+          </a>
+          <a href="mailto:rob.wilhelmsson@gmail.com" target="_blank" rel="noreferrer">
+            <Mail className="icon" />
+          </a>
+          <a href="https://codepen.io/robwilhelmsson" target="_blank" rel="noreferrer">
+            <Codepen className="icon" />
+          </a>
         </IconStyleWrapper>
       </StyledSideElement>
     </>

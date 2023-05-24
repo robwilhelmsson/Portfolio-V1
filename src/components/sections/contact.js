@@ -1,7 +1,6 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { StyledLink } from './hero'
 
 
 const StyledContactContainer = styled.section`
@@ -55,8 +54,27 @@ const StyledContactContainer = styled.section`
       text-align: center;
     }
     a {
-      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 45px;
+      margin: 20px 0 0 7px;
       color: var(--orange);
+      text-decoration: none;
+      border: 1px solid var(--orange);
+      border-radius: 2px;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      :hover {
+        box-shadow: inset 0 0 0px 1px var(--orange);
+        letter-spacing: 0.5px;
+      }
+      span {
+        text-decoration: none;
+        font-family: var(--font-mono);
+        font-size: var(--fs-sm);
+      }
     }
 `
 
@@ -70,9 +88,9 @@ const Contact = () => {
       <div className='content'>
         <h2 className='medium-heading'>Get in touch</h2>
         <p>I'm currently looking for work experience within web development so feel free to get in touch if you want to chat, my inbox is always open.</p>
-          <StyledLink to='/'>
-            <span>Contact</span>
-          </StyledLink>
+        <a href="mailto:rob.wilhelmsson@gmail.com">
+          <span>Contact</span>
+        </a>
       </div>
     </StyledContactContainer>
   )

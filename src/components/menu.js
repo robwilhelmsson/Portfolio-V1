@@ -17,6 +17,7 @@ const StyledMenu = styled.div`
   width: 65%;
   z-index: 10;
   transition: all 0.3s ease 0s;
+  box-shadow: ${({ menuOpen }) => menuOpen ? '-20px 0px 80px 50px rgba(0,0,0,0.4)' : ''};
   transform: ${({ menuOpen }) => menuOpen ? 'translateX(0)' : 'translateX(100%)'};
   a {
     cursor: pointer;
