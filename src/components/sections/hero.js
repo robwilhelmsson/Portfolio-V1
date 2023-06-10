@@ -82,9 +82,9 @@ const Hero = () => {
       <StyledHeroContainer id="hero">
         <h3>Hi, my name is</h3>
         <h1 className="large-heading">Rob Wilhelmsson.</h1>
-        <h2 className="large-heading">I'm a Web Developer based in London.</h2>
+        <h2 className="large-heading">I&apos;m a Web Developer based in London.</h2>
         <p>
-          I'm a software engineer. I completed a full-stack software engineering
+          I&apos;m a software engineer. I completed a full-stack software engineering
           bootcamp with <a href="https://generalassemb.ly/" target="blank">General Assembly</a>. I am now looking to put my skills to
           good use and gain some experience.
         </p>

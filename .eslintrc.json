@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true
+  },
+  "plugins": ["react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

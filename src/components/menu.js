@@ -62,6 +62,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
 
 Menu.propTypes = {
   menuOpen: bool.isRequired,
+  setMenuOpen: bool.isRequired
 }
 
 export default Menu

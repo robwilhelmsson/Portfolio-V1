@@ -1,11 +1,12 @@
+/* eslint-env node */
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
   siteMetadata: {
     title: `Rob Wilhelmsson`,
-    description:
-      'Portfolio for Rob Wilhelmsson, software engineer.',
+    description: 'Portfolio for Rob Wilhelmsson, software engineer.',
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -19,10 +20,15 @@ module.exports = {
         name: `content`,
         path: `${__dirname}/content`,
       },
+    },
+    {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+        ],
         web: [
           {
             name: `Open Sans`,
@@ -40,4 +46,4 @@ module.exports = {
       },
     },
   ],
-}
+};

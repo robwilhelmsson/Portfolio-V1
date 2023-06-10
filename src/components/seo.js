@@ -1,5 +1,7 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import PropTypes from "prop-types";
+
 
 const Seo = ({ title }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +21,10 @@ const Seo = ({ title }) => {
       </title>
     </>
   );
+};
+
+Seo.propTypes = {
+  title: PropTypes.string.isRequired,
 };
 
 export default Seo;

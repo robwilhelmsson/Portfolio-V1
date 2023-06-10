@@ -87,7 +87,7 @@ const Contact = () => {
       </div>
       <div className='content'>
         <h2 className='medium-heading'>Get in touch</h2>
-        <p>I'm currently looking for work experience within web development so feel free to get in touch if you want to chat, my inbox is always open.</p>
+        <p>I&apos;m currently looking for work experience within web development so feel free to get in touch if you want to chat, my inbox is always open.</p>
         <a href="mailto:rob.wilhelmsson@gmail.com">
           <span>Contact</span>
         </a>
