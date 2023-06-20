@@ -5,9 +5,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Rob Wilhelmsson`,
+    title: 'Rob Wilhelmsson',
     description: 'Portfolio for Rob Wilhelmsson, software engineer.',
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: 'https://www.yourdomain.tld',
   },
   plugins: [
     "gatsby-plugin-image",

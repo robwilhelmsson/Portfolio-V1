@@ -1,7 +1,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { bool } from 'prop-types';
+import PropTypes from "prop-types";
 import { Link } from 'react-scroll'
 
 const StyledMenu = styled.div`
@@ -61,8 +61,8 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
 }
 
 Menu.propTypes = {
-  menuOpen: bool.isRequired,
-  setMenuOpen: bool.isRequired
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.func.isRequired
 }
 
 export default Menu

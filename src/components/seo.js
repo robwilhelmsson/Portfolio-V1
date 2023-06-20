@@ -24,7 +24,7 @@ const Seo = ({ title }) => {
 };
 
 Seo.propTypes = {
-  title: PropTypes.string.isRequired,
-};
+  title: PropTypes.bool
+}
 
 export default Seo;
