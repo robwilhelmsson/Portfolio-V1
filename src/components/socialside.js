@@ -1,10 +1,7 @@
-
 import React from "react";
 import styled from "styled-components";
-import { StyledIconBase } from '@styled-icons/styled-icon'
-import { Github, Linkedin, Mail, Codepen } from "@styled-icons/feather"
-
-
+import { FiGithub, FiLinkedin, FiCodepen, FiMail } from "react-icons/fi"
+import { IconContext } from "react-icons";
 
 const StyledSideElement = styled.div`
 
@@ -28,14 +25,11 @@ const StyledSideElement = styled.div`
 `;
 
 const IconStyleWrapper = styled.div`
-  ${StyledIconBase} {
+  a {
     color: var(--light-grey);
-    height: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    margin: auto;
   }
   .icon {
     margin-top: 25px;
@@ -57,16 +51,24 @@ const Socialside = () => {
       <StyledSideElement>
         <IconStyleWrapper>
           <a href="https://github.com/robwilhelmsson" target="_blank" rel="noreferrer">
-            <Github className="icon" />
+            <IconContext.Provider value={{ size: '22px' }}>
+              <FiGithub className="icon" />
+            </IconContext.Provider>
           </a>
           <a href="https://www.linkedin.com/in/robwilhelmsson/" target="_blank" rel="noreferrer">
-            <Linkedin className="icon" />
+            <IconContext.Provider value={{ size: '22px' }}>
+              <FiLinkedin className="icon" />
+            </IconContext.Provider>
           </a>
           <a href="mailto:rob.wilhelmsson@gmail.com" target="_blank" rel="noreferrer">
-            <Mail className="icon" />
+            <IconContext.Provider value={{ size: '22px' }}>
+              <FiMail className="icon" />
+            </IconContext.Provider>
           </a>
           <a href="https://codepen.io/robwilhelmsson" target="_blank" rel="noreferrer">
-            <Codepen className="icon" />
+            <IconContext.Provider value={{ size: '22px' }}>
+              <FiCodepen className="icon" />
+            </IconContext.Provider>
           </a>
         </IconStyleWrapper>
       </StyledSideElement>
