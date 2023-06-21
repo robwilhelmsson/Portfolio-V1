@@ -27,8 +27,6 @@ const StyledFooterContainer = styled.footer`
     color: var(--light-grey);
     transition: all 0.4s ease 0s;
   }
-
-
 `
 
 const Footer = () => {

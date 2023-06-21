@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const StyledProjectContainer = styled.section`
   max-width: 1000px;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   margin: auto;
 
   h1 {
@@ -176,6 +176,25 @@ const StyledProjectTech = styled.div`
   }
 `
 
+const StyledGithubLink = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  p {
+    font-family: var(--font-mono);
+    font-size: var(--fs-md);
+    color: var(--light-grey);
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    :hover {
+        color: var(--orange);
+        letter-spacing: 0.1px;
+      }
+  }
+`
+
 const Projects = () => {
   return (
     <StyledProjectContainer>
@@ -286,6 +305,12 @@ const Projects = () => {
         </StyledProject>
 
       </StyledProjectsAll>
+      <StyledGithubLink>
+        <a href='https://github.com/robwilhelmsson'>
+          <p>Check out all the projects on GitHub</p>
+        </a>
+
+      </StyledGithubLink>
 
     </StyledProjectContainer>
 

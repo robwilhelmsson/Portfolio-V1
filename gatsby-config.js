@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: 'Rob Wilhelmsson',
     description: 'Portfolio for Rob Wilhelmsson, software engineer.',
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://www.robwilhelmsson.com',
   },
   plugins: [
     "gatsby-plugin-image",
@@ -19,6 +19,17 @@ module.exports = {
       options: {
         name: `content`,
         path: `${__dirname}/content`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "GatsbyJS",
+        short_name: "GatsbyJS",
+        start_url: "/",
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        icon: "src/images/rw-icon.png",
       },
     },
     {
