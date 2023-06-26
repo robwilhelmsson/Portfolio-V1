@@ -1,8 +1,8 @@
-
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from "prop-types";
 import { Link } from 'react-scroll'
+import { Link as GatsbyLink } from 'gatsby';
 
 const StyledMenu = styled.div`
   display: flex;
@@ -55,7 +55,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
       <Link to='skills' spy={true} smooth={true} offset={-50} duration={700} onClick={handleLinkClick}>Skills</Link>
       <Link to='projects' spy={true} smooth={true} offset={-50} duration={700} onClick={handleLinkClick}>Projects</Link>
       <Link to='contact' spy={true} smooth={true} offset={-50} duration={700} onClick={handleLinkClick}>Contact</Link>
-      <Link to='/' spy={true} smooth={true} offset={-50} duration={700} onClick={handleLinkClick}>CV</Link>
+      <GatsbyLink to='/cv' spy={true} smooth={true} offset={-50} duration={700} style={{ textDecoration: 'none' }} onClick={handleLinkClick}>CV</GatsbyLink>
     </StyledMenu>
   )
 }

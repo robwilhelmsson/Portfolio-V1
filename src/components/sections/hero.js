@@ -1,8 +1,6 @@
-
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
-
 
 const StyledHeroContainer = styled.section`
   display: flex;
@@ -11,12 +9,10 @@ const StyledHeroContainer = styled.section`
   height: calc(100vh - var(--nav-height) - 100px);
   padding-top: 100px;
   margin: auto;
-
   @media (max-width: 900px) {
     height: calc(100vh - var(--nav-height) - 40px);
     padding-top: 60px;
   }
-
   h3 {
     color: var(--orange);
     font-family: var(--font-mono);
@@ -24,22 +20,18 @@ const StyledHeroContainer = styled.section`
     font-weight: 300;
     margin: 0 0 30px 5px;
   }
-
   h1 {
     color: var(--light);
   }
-
   h2 {
     color: var(--light-grey);
   }
-
   p {
     font-size: var(--fs-xl);
     font-weight: 200;
     margin: 20px 0 0 5px;
     color: var(--light-grey);
   }
-
   p a {
     font-size: var(--fs-xl);
     font-weight: 200;
@@ -74,7 +66,6 @@ const StyledLink = styled(Link)`
     font-size: var(--fs-sm);
   }
 `
-
 
 const Hero = () => {
   return (

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Hero from "../components/sections/hero";
 import About from "../components/sections/about";
@@ -15,10 +16,10 @@ const IndexPage = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Link to="/cv" />
     </Layout>;
   </>
-
-};
+}
 
 export const Head = () => <Seo title />;
 

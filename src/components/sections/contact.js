@@ -1,10 +1,7 @@
-
 import React from 'react'
 import styled from 'styled-components'
 
-
 const StyledContactContainer = styled.section`
-  /* display: flex; */
   flex-direction: column;
   max-width: 500px;
   justify-content: center;
@@ -12,7 +9,6 @@ const StyledContactContainer = styled.section`
   padding-bottom: 150px;
   height: auto;
   margin: auto;
-
   h1 {
     display: flex;
     flex-direction: row;
@@ -32,20 +28,17 @@ const StyledContactContainer = styled.section`
     ::after {
       margin-left: 10px;
     }
-
     h2 {
       padding-top: 40px;
       display: flex;
       justify-content: center;
       color: var(--light);
     }
-
     p {
       color: var(--light-grey);
       font-size: var(--fs-lg);
       line-height: 25px;
     }
-
     .content {
       display: flex;
       flex-direction: column;
@@ -77,7 +70,6 @@ const StyledContactContainer = styled.section`
       }
     }
 `
-
 
 const Contact = () => {
   return (

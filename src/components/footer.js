@@ -1,26 +1,21 @@
-
 import React from 'react'
 import styled from 'styled-components'
-
 
 const StyledFooterContainer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-
   a {
     text-decoration: none;
     line-height: 10px;
   }
-
   div {
     :hover p {
         color: var(--orange);
         letter-spacing: 0.1px;
       }
   }
-
   p {
     font-family: var(--font-mono);
     font-size: var(--fs-xxxs);

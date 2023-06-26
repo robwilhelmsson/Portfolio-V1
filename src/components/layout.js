@@ -20,9 +20,7 @@ const StyledMain = styled.main`
   }
 `;
 
-
 const Layout = ({ children }) => {
-
   return (
     <>
       <GlobalStyle />

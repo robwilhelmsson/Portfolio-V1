@@ -25,12 +25,6 @@ const variables = css`
     --border-radius: 4px;
     --nav-height: 100px;
   }
-`;
+`
 
 export default variables;
-
-// --dark-green: #2C3333;
-// --green: #3D4747;
-// --light-grey: #9DABAB;
-// --light: #DFF2F2;
-// --orange: #FF7721;

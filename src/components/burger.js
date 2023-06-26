@@ -1,4 +1,3 @@
-
 import React from "react";
 import styled from "styled-components";
 import { bool, func } from 'prop-types';
@@ -33,12 +32,10 @@ const StyledBurger = styled.button`
     :first-child {
       transform: ${({ menuOpen }) => menuOpen ? 'rotate(225deg) translateX(-34px) translateY(-0px)' : 'rotate(0)'};
     }
-
     :nth-child(2) {
       opacity: ${({ menuOpen }) => menuOpen ? '0' : '1'};
       transform: ${({ menuOpen }) => menuOpen ? 'translateX(20px)' : 'translateX(0)'};
     }
-
     :nth-child(3) {
       transform: ${({ menuOpen }) => menuOpen ? 'rotate(135deg) translateX(-34px) translateY(0px)' : 'rotate(0)'};
     }

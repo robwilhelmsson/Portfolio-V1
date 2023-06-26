@@ -1,7 +1,5 @@
-
 import React from 'react'
 import styled from 'styled-components'
-
 
 const StyledSkillsContainer = styled.section`
   display: flex;
@@ -10,7 +8,6 @@ const StyledSkillsContainer = styled.section`
   height: auto;
   margin: auto;
   padding-bottom: 200px;
-
   h1 {
     display: flex;
     justify-content: flex-end;
@@ -19,7 +16,6 @@ const StyledSkillsContainer = styled.section`
     color: var(--light);
     margin-right: 5px;
     cursor: default;
-
     ::after {
       content: '————————';
       font-weight: 100;
@@ -37,7 +33,7 @@ const StyledContentContainer = styled.div`
   @media (max-width: 900px) {
     flex-wrap: wrap;
   }
-;`
+`
 
 const StyledContent = styled.div`
   display: flex;
@@ -55,8 +51,6 @@ const StyledContent = styled.div`
   @media (max-width: 450px) {
     min-width: 200px;
   }
-
-
   h3 {
     color: var(--light);
     font-size: var(--fs-lg);
@@ -67,7 +61,6 @@ const StyledContent = styled.div`
       color: var(--orange);
     }
   }
-
   ul {
     font-family: var(--font-mono);
     font-size: var(--fs-xxs);
@@ -75,12 +68,11 @@ const StyledContent = styled.div`
     list-style: none;
     padding: 0;
   }
-
   li {
     line-height: 25px;
     cursor: default;
   }
-`;
+`
 
 const frontendContent = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'MaterialUI', 'Bulma', 'Styled Components', 'TailwindCSS']
 const backendContent = ['Python', 'MongoDB', 'Mongoose', 'Express', 'Node.js', 'Flask', 'SQLAlchemy', 'Postgres']

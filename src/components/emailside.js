@@ -28,7 +28,6 @@ const StyledEmailWrapper = styled.div`
     margin: 20px auto 0 auto;
     background-color: var(--light-grey);
   }
-
   a {
     margin: 20px auto 0 auto;
     padding: 10px;
@@ -44,7 +43,7 @@ const StyledEmailWrapper = styled.div`
       color: var(--orange);
     }
   }
-`;
+`
 
 const EmailSide = () => {
   return (

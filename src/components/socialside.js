@@ -8,7 +8,6 @@ const StyledSideElement = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
-
   width: 40px;
   position: fixed;
   bottom: 0;
@@ -22,7 +21,7 @@ const StyledSideElement = styled.div`
     margin: 25px auto 0 auto;
     background-color: var(--light-grey);
   }
-`;
+`
 
 const IconStyleWrapper = styled.div`
   a {
@@ -41,9 +40,6 @@ const IconStyleWrapper = styled.div`
     }
   }
 `
-
-
-
 
 const Socialside = () => {
   return (

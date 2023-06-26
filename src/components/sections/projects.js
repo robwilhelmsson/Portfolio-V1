@@ -1,20 +1,16 @@
-
 import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
-
 
 const StyledProjectContainer = styled.section`
   max-width: 1000px;
   padding-bottom: 150px;
   margin: auto;
-
   h1 {
     font-size: var(--fs-xxxl);
     font-weight: 300;
     color: var(--light);
     margin-bottom: 40px;
-
     ::before {
       content: '————————';
       font-weight: 100;
@@ -29,7 +25,6 @@ const StyledProjectContainer = styled.section`
       font-size: var(--fs-lg);
     }
   }
-
   h4 {
     font-size: var(--fs-md);
     font-weight: 300;
@@ -37,7 +32,6 @@ const StyledProjectContainer = styled.section`
       font-size: var(--fs-sm);
     }
   }
-
   h5 {
     font-family: var(--font-mono);
     font-weight: 400;
@@ -50,6 +44,7 @@ const StyledProjectContainer = styled.section`
     text-decoration: none;
   }
 `
+
 const StyledProjectsAll = styled.div`
   display: flex;
   flex-direction: column;
@@ -306,7 +301,7 @@ const Projects = () => {
 
       </StyledProjectsAll>
       <StyledGithubLink>
-        <a href='https://github.com/robwilhelmsson'>
+        <a href='https://github.com/robwilhelmsson' rel='noreferrer' target='_blank'>
           <p>Check out all the projects on GitHub</p>
         </a>
 
