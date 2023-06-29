@@ -75,7 +75,7 @@ const StyledContent = styled.div`
 `
 
 const frontendContent = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'MaterialUI', 'Bulma', 'Styled Components', 'TailwindCSS']
-const backendContent = ['Python', 'MongoDB', 'Mongoose', 'Express', 'Node.js', 'Flask', 'SQLAlchemy', 'Postgres']
+const backendContent = ['Python', 'MongoDB', 'Mongoose', 'Express', 'Node.js', 'Flask', 'SQL', 'NoSQL']
 const projectManagementContent = ['Github', 'Jira']
 const designContent = ['Illustrator', 'Photoshop', 'Figma']
 
