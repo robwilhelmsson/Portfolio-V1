@@ -1,49 +1,38 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter!
-</h1>
+# Portfolio Showcase
 
-## 🚀 Quick start
+I'm thrilled to present my portfolio website, featuring a collection of projects completed during my experience at General Assembly, where I successfully completed the Software Engineering Bootcamp.
 
-1.  **Create a Gatsby site.**
+## Design Inspiration
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+While drawing inspiration from some of the best portfolios on the web, I aimed to infuse my own creativity into the design to make it uniquely mine.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Technologies Used
 
-2.  **Start developing.**
+The portfolio was crafted using:
 
-    Navigate into your new site’s directory and start it up.
+- **React and Gatsby**: for a performant and dynamic user experience.
+- **Styled Components**: to style components with the added advantage of using global variables.
+- **Mobile and Web Friendly**: Ensuring accessibility across devices.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Challenges Faced
 
-3.  **Open the code and start customizing!**
+Throughout the development journey, I encountered a few challenges:
 
-    Your site is now running at http://localhost:8000!
+- **Mobile Responsiveness**: The projects section presented difficulties in achieving optimal mobile responsiveness. While it functions well, further enhancements for mobile display are on my agenda. This is apparent mostly in the Projects section where the styling of the components works a lot better on web. 
+  
+- **Data Storage**: I opted to use files for project data content due to the limited information I had to put across. In the future, migrating to a database is something I would look into. 
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Styling
 
-4.  **Learn more**
+In my pursuit of aesthetic appeal, I implemented some styling features:
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- **Mouse Glow**: A subtle glow effect was added for a captivating visual experience.
+  
+- **Hover Animations**: Components come to life with engaging animations upon hover. I'm open to refining these with more practice.
 
-## 🚀 Quick start (Netlify)
+## Contact Me
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+Thank you for exploring my portfolio! If you have any questions or would like to connect, feel free to reach out.
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- [LinkedIn](https://www.linkedin.com/in/robwilhelmsson/)
+- [GitHub](https://github.com/robwilhelmsson)
